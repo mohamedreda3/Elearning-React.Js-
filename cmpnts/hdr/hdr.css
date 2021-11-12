@@ -1,0 +1,127 @@
+header.hdr {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hdrimg-col {
+    width: 70vh;
+    height: 70vh;
+}
+
+.hdrcntnt-col {
+    width: 70vh;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+position:relative;
+}
+
+.hdrimg-col img {
+    width: 100%;
+    height: 100%;
+}
+
+.hdricn-col {
+    width: 100%;
+    height: 19vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        font-size: 2.7vh;
+    font-family: fangsong;
+    font-weight: 900;
+}
+
+.hdricn {
+    width: 19vh;
+    height: 19vh;
+}
+
+.hdricn img {
+    width: 100%;
+    height: 100%;
+}
+
+.hdricn-col h1 {
+    margin: 0px;
+    padding: 0vh;
+    height: 19vh;
+    display: flex;
+    align-items: center;
+}
+
+.hdrcntnt-col span {
+    font-size: 4vh;
+    font-family: fangsong;
+    margin: 2vh 0vh;
+    padding: 0vh 4vh;
+}
+
+.hrdbtns-col {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 19vh;
+position:relative;
+}
+
+.hrdbtns-col a {
+    text-decoration: none;
+    background: green;
+    width: 34vh;
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 1vh;
+    transition: 0.3s cubic-bezier(0.44,-0.27, 0.4, 1.01);
+    letter-spacing: 0.1em;
+    font-size: 4.2vh;
+    font-family: -webkit-pictograph;
+position:relative;
+}
+
+.hrdbtns-col a:hover {
+    opacity: 0.8;
+}
+
+.hrdbtns-col a:nth-child(1) {
+    background: #118a95;
+}
+
+.hrdbtns-col a:nth-child(2) {
+    background: #1d7ea8;
+}
+/* 
+.hdrimg-col::before {
+    content: '';
+    width: 100%;
+    height: 10vh;
+    background: grey;
+    position: absolute;
+} */
+
+@media(max-width: 650px){
+
+header.hdr {
+    flex-direction: column;
+}
+
+.hdrimg-col {
+    width: 50vh;
+    height: 50vh;
+    display: none;
+}
+
+.hdrcntnt-col {
+    justify-content: flex-start;
+    min-height: 50vh;
+}
+
+}
